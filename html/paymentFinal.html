@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版第六週作業</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+    <section class="container my-2">
+        <a class="logo logoP mb-2" href="../html/index.html">Craftsman</a>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-wrap w-100">
+                    <!--productDetails -->
+                    <div class="productDetailCollapse w-100 mb-3 col-12 col-md-5 order-md-2">
+                        <div class="collapseHeader bg-light fz-2 lh-3 d-md-none d-block d-flex justify-content-between"
+                            data-toggle="collapse" href="#multiCollapse" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1">
+                            <span>Order Summary</span>
+                            <div class="d-flex">
+                                <span class="totalSpan">NT$4,760</span>
+                                <i class="material-icons arrowIcon primary" type="button"
+                                    id="arrowIcon">keyboard_arrow_down</i>
+                            </div>
+                        </div>
+
+                        <!--productDetailContent -->
+                        <div class="collapse multi-collapse p-2 bg-light d-md-block" id="multiCollapse">
+                            <div class="card card-body infoBox p-0 border-0 bg-light">
+                                <ul class="pb-2 mb-2 border-bottom">
+                                    <li class="mb-1 d-flex justify-content-between">
+                                        <img src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+                                            alt="tatami cup">
+                                        <div class="ml-2 d-flex justify-content-between align-items-center w-100">
+                                            <p class="fz-2 lh-4 fw-bold m-0">Tatami Cup ×1</p>
+                                            <p class="fz-2 lh-4 m-0">NT$1,080</p>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <img src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1566&q=80"
+                                            alt="Baifan Bowl">
+                                        <div class="ml-2 d-flex justify-content-between align-items-center w-100">
+                                            <p class="fz-2 lh-4 fw-bold m-0">Baifan Bowl sp ×2</p>
+                                            <p class="fz-2 lh-4 m-0">NT$3,600</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="pb-2 mb-2 border-bottom">
+                                    <li class="d-flex justify-content-between">
+                                        <span class="fz-2 lh-4">Subtotal</span>
+                                        <span class="fz-2 lh-4">NT$4,680</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span class="fz-2 lh-4">Shipping</span>
+                                        <span class="fz-2 lh-4">NT$80</span>
+                                    </li>
+                                </ul>
+                                <div class="d-flex justify-content-between">
+                                    <span class="fz-3 lh-4 fw-bold">Total</span>
+                                    <span class="fz-3 lh-4 fw-bold">NT$4,760</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 order-md-1">
+                        <!--paymentProcessBar -->
+                        <nav aria-label="processBreadcrumb order-md-1">
+                            <ol class="breadcrumb bg-transparent p-0">
+                                <li class="breadcrumb-item primary">Cart</li>
+                                <li class="breadcrumb-item textColor">Information</li>
+                                <li class="breadcrumb-item textColor fw-bold">Payment</li>
+                            </ol>
+                        </nav>
+                        <!--customerInfoCheck -->
+                        <div class="customerInfo w-100">
+                            <div class="form-group mb-3">
+                                <label class="formGroupLabel" for="exampleInputEmail1">Information</label>
+                                <div class="accordion mb-3" id="accordionExample">
+                                    <div class="contactCard">
+                                        <div class="card-header p-2 bg-white" id="headingOne">
+                                            <div class="d-block d-flex justify-content-between" type="button"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <span class="mr-3 fz-2 lh-3">Contact</span>
+                                                <span class="infoSpan alertTxt">Joanne@mail.com...</span>
+                                                <div class="">
+                                                    <i class="material-icons arrowIcon primary" type="button"
+                                                        id="arrowIcon">keyboard_arrow_down</i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card card-body alertTxt bg-white border-0 pt-0 mt-16">
+                                                Joanne Lin<br>Joanne@mail.com<br>+886 912-345-678
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="shipCard">
+                                        <div class="card-header p-2 bg-white" id="headingTwo">
+                                            <div class="d-block d-flex justify-content-between" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <span class="mr-3 fz-2 lh-3">Ship to</span>
+                                                <span class="shipSpan alertTxt">3F., No. 2, Ln. 1, Hello 2nd…</span>
+                                                <div class="">
+                                                    <i class="material-icons arrowIcon primary" type="button"
+                                                        id="arrowIcon">keyboard_arrow_down</i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card card-body alertTxt bg-white border-0 pt-0 mt-16">
+                                                3F., No. 2, Ln. 1, Hello 2nd Rd.,<br> Woohoo Dist., Kaohsiung City
+                                                806,<br> Taiwan
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <label class="formGroupLabel" for="exampleInputPassword1">Credit Card</label>
+                                <div class="form-group d-flex flex-column mb-0">
+                                    <input class="p-2 w-100 bd-round-4 mb-1 mr-md-1" type="password"
+                                        class="form-control" id="exampleInputPassword1" placeholder="Card number">
+                                    <input class="p-2 w-100 bd-round-4 mb-1" type="password" class="form-control"
+                                        id="exampleInputPassword1" placeholder="Name on card">
+                                </div>
+                                <div class="form-group d-flex flex-column flex-md-row mb-0">
+                                    <input class="p-2 w-100 bd-round-4 mb-1 mb-md-4 mr-md-1" type="password"
+                                        class="form-control" id="exampleInputPassword1"
+                                        placeholder="Expiration date (MM / YY)">
+                                    <input class="p-2 w-100 bd-round-4 mb-3 mb-md-4" type="password"
+                                        class="form-control" id="exampleInputPassword1" placeholder="Security code">
+                                </div>
+                                <div class="form-group d-flex flex-column flex-md-row d-block flex-wrap">
+                                    <div
+                                        class="d-md-flex border-bottom mb-2 flex-md-row-reverse align-items-center justify-content-md-between w-md-100 mb-md-1 pb-md-4">
+                                        <div class="fillBtn text-center w-100 w-md-auto">
+                                            <a href="../html/complete.html">Pay now</a>
+                                        </div>
+                                        <a class="primary text-center d-block my-3" href="../html/paymentProcess.html">
+                                            <i class="returnIcon material-icons mr-1">keyboard_arrow_left</i>
+                                            <span>Return to information</span>
+                                        </a>
+                                    </div>
+
+                                    <ul class="d-flex flex-column flex-md-row">
+                                        <li class="mb-2 mr-md-3">
+                                            <a class="alertTxt" href="#">Purchase Policy</a>
+                                        </li>
+                                        <li class="mb-2 mr-md-3">
+                                            <a class="alertTxt" href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a class="alertTxt" href="#">Terms & Conditions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/swiper.js"></script>
+</body>
+
+</html>

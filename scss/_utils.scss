@@ -1,0 +1,202 @@
+//fonts
+.fz-2 {
+    font-size: 16px;
+}
+
+.fz-3 {
+    font-size: 24px;
+}
+
+.fz-4 {
+    font-size: 32px;
+}
+
+.fz-6 {
+    font-size: 48px;
+}
+
+
+//line-height
+.lh-19 {
+    line-height: 19px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.lh-36 {
+    line-height: 36px;
+}
+
+.lh-2 {
+    line-height: 16px;
+}
+
+.lh-3 {
+    line-height: 24px;
+}
+
+.lh-4 {
+    line-height: 32px;
+}
+
+.lh-6 {
+    line-height: 48px;
+}
+
+.lh-8 {
+    line-height: 64px;
+}
+
+
+//font-weight
+.fw-bold {
+    font-weight: 700;
+}
+
+
+// color
+.textColor {
+    color: $text;
+}
+
+.textLight {
+    color: $secondary;
+}
+
+.primary {
+    color: $primary;
+}
+
+.lightest {
+    color: $lightest;
+}
+
+.transparentWhite {
+    color: #FFFFFF99;
+}
+
+.alertTxt {
+    color: #0000009A;
+}
+
+.placeHolderColor {
+    color: #00000098;
+}
+
+.bg-light {
+    background-color: #F2F2F2;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+//swiperImg
+@media (min-width: 768px) {
+    .w-md-350 {
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .w-240 {
+        width: 240px !important;
+    }
+}
+
+// bannerTxt
+@media (min-width: 768px) {
+    .text-md-dark {
+        color: #121212 !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .text-sm-white {
+        color: #fff !important;
+    }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+    }
+
+
+//productFall
+@media (min-width: 768px) {
+    .normalCard {
+        // width: 350px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .normalCardImg {
+        // width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 768px) {
+    .smallCard {
+        // width: 350px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .smallCardImg {
+        // width: 350px;
+        height: 240px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bigCard {
+        // width: 350px !important;
+        height: auto !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .bigCardImg {
+        // width: 350px;
+        height: 480px;
+    }
+}
+
+//productDetail
+@media (min-width: 768px) {
+    .w-md-100 {
+    width: 100%!important;
+    }
+    
+    .w-md-60 {
+    width: 60%!important;
+    }
+    
+    .w-md-35 {
+    width: 35%!important;
+    }
+
+    .w-md-50 {
+        width: 50%!important;
+    }
+
+    .w-md-auto {
+        width: auto!important;
+    }
+}
+
+//paymentProcess
+.logoP {
+    padding-left: 15px;
+}
+
+.bd-round-4 {
+    border-radius: 4px solid #00000060;
+}
+

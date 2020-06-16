@@ -1,0 +1,59 @@
+.mainSections {
+    top: -77px;
+}
+
+.banner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+
+    .bannerImg {
+    background-image: url(https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    top: 0;
+    bottom: 0;
+    }
+
+    .container {
+    padding-top: 188px;
+    padding-bottom: 24px;
+    
+    @media (min-width: 768px) {
+            padding-top: 236px;
+            padding-bottom: 236px;
+        }
+
+        .sloganSm {
+            padding-bottom: 108px;
+            @media (min-width: 768px) {
+                color: #0000009A;
+            }
+        }
+    }
+}
+
+.quote {
+    background-image: url(https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+
+    .quoteContent {
+        height: 400px;
+    }
+
+    .Director {
+        margin-bottom: 4px;
+    }
+
+    .SNS {
+        a:hover {
+            color: $lightest;
+        }
+
+        .SNS-link {
+            margin-right: 23px;
+        }
+    }
+    }
+

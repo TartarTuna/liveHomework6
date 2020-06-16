@@ -1,0 +1,93 @@
+.header {
+    z-index: 100;
+
+        .phoneSidebar {
+            padding-top: 15px;
+            height: 100%;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: .4s;
+
+        .phoneSidebarItem {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .arrowDown {
+                transform: rotate(0deg);
+                transition: all 0.4s;
+
+            &.active {
+                transform: rotate(-180deg);
+                }
+            }
+
+            .listContent {
+            display: none;
+            }
+        }
+    }
+    
+        .navBar {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+
+
+.subscribe {
+    background-image: url(https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+
+    .callActive {
+        @media (min-width: 768px) {
+            font-size: 48px;
+            line-height: 64px;
+        }
+    }
+
+    .form-control {
+        padding: 19px 16px 18px 16px;
+        height: 56px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF99;
+        border-right: none;
+    }
+
+    .btn {
+        padding: 0 24px;
+        height: 56px;
+
+        @media (min-width: 768px) {
+            padding: 0 44px;
+        }
+    }
+}
+
+
+.footer {
+    background-color: $text;
+    .container{
+        padding-top: 23px;
+        padding-bottom: 24px;
+
+        .row {
+            padding: 0 15px;
+        }
+    }
+
+    .logo {
+        color: $lightest;
+    }
+
+    ul, p {
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFFDE;
+    }
+}

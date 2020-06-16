@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版第六週作業</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+    <!-- header -->
+    <section class="header container position-relative">
+        <!--手機sidebar -->
+        <div class="phoneSidebar d-md-none flex-column align-items-start d-block bg-white" id="phoneSidebar">
+            <div class="phoneSidebarItem d-flex justify-content-between w-100 mb-4">
+                <a href="#"><i class="hideSidebar material-icons textColor">arrow_back</i></a>
+                <a href="#"><i class="material-icons textColor">shopping_cart</i></a>
+            </div>
+            <ul class="phoneSidebarItem navbar-nav">
+                <li class="productList border-bottom">
+                    <div class=" d-flex justify-content-between mb-2">
+                        <a class="nav-list-link fz-3 lh-28" href="../html/product.html">Product</a>
+                        <a class="arrowBtn  textColor" href="#"><i
+                                class="material-icons arrowDown">keyboard_arrow_down</i></a>
+                    </div>
+
+                    <ul class="listContent border-top pl-0">
+                        <li class="mt-2 mb-2 textLight">ALL<sup>24</sup></li>
+                        <li class="mb-2 textLight">BOWL<sup>10</sup></li>
+                        <li class="mb-2 textLight">CUP<sup>8</sup></li>
+                        <li class="mb-2 textLight">PLATE<sup>3</sup></li>
+                        <li class="mb-2 textLight">VASE<sup>3</sup></li>
+                    </ul>
+                </li>
+                <li class="border-bottom pt-2 pb-2 fz-3 lh-28">
+                    <a class="nav-list-link" href="#">Blog</a>
+                </li>
+                <li class="border-bottom pt-2 pb-2 fz-3 lh-28">
+                    <a class="nav-list-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--navbar -->
+        <nav class="navbar navbar-expand-md bg-transparent px-0">
+            <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="material-icons lightest">dehaze</i>
+            </button>
+
+            <a class="logo text-sm-white" href="../html/index.html">Craftsman</a>
+
+            <a class="nav-link pr-0 order-md-3 text-white" href="../html/paymentProcess.html" data-toggle="modal"
+                data-target="#exampleModal">
+                <i class="material-icons">shopping_cart</i>
+            </a>
+            <!--手機時會隱藏起來的navItem -->
+            <div class="collapse navbar-collapse mr-auto d-none d-md-block justify-content-md-end"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="indexNav">
+                        <a class="nav-link mr-md-6 text-white" href="../html/product.html">Product</a>
+                    </li>
+                    <li class="indexNav">
+                        <a class="nav-link mr-md-6 text-white" href="#">Blog</a>
+                    </li>
+                    <li class="indexNav">
+                        <a class="nav-link mr-md-6 text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div class="mainSections position-relative">
+        <!-- banner -->
+        <section class="banner container-fluid position-relative mb-6">
+            <!--banner背景圖 -->
+            <div class="row justify-content-end">
+                <div class="bannerImg col-md-6 bg-cover position-absolute">
+                </div>
+            </div>
+            <!--banner內容 -->
+            <div class="container">
+                <div class="row text-white text-center text-md-left">
+                    <div class="col-md-6 text-md-dark">
+                        <h1 class="fz-6 lh-8 fw-bold">Enjoy Your<br>Minimalist Lifestyle.</h1>
+                        <p class="sloganSm transparentWhite fz-2 lh-3 pb-md-6">The best crafts in Taiwan. Get your
+                            free<br>shipping on the first order.
+                        </p>
+                        <div class="fillBtn pb-3">
+                            <a href="../html/product.html">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features -->
+        <section class="features container">
+            <!-- 第一個 -->
+            <div class="row align-items-md-center mb-3 mb-md-4">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1473230841016-ca42011196d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+                        alt="feature1">
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">
+                    <p class="fz-3 lh-3 fw-bold">Special Clays</p>
+                    <p class="fz-2 lh-3 textLight">A general body formulation for contemporary earthenware is 25%
+                        kaolin, 25% ball clay,
+                        35% quartz and 15% feldspar.</p>
+                    <a href="#" class="lh-2 lh-19 fw-bold primary">learn more</a>
+                </div>
+            </div>
+            <!-- 第二個 -->
+            <div class="row align-items-md-center mb-3 mb-md-4 flex-md-row-reverse">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1572725394982-fbee32027b77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                        alt="feature2">
+                </div>
+                <div class="col-12 col-md-5 text-md-right col-md-offset-right-1">
+                    <p class="fz-3 lh-3 fw-bold">Less is more</p>
+                    <p class="fz-2 lh-3 textLight">Trimming pottery can transform a weighty Earth-bound pot into one
+                        that is a pleasure to hold, look at, and use.</p>
+                    <a href="#" class="lh-2 lh-19 fw-bold primary">learn more</a>
+                </div>
+            </div>
+            <!-- 第三個 -->
+            <div class="row align-items-md-center">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1541085478756-418a3402fcb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+                        alt="feature3">
+                </div>
+                <div class="col-12 col-md-5 offset-md-1">
+                    <p class="fz-3 lh-3 fw-bold">Marvelous Detail</p>
+                    <p class="fz-2 lh-3 textLight">In Craftsman, the art director, working with marketers, develops
+                        or creates an idea of a new creation.</p>
+                    <a href="#" class="lh-2 lh-19 fw-bold primary">learn more</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- quote -->
+    <section class="quote mb-md-9 mb-6">
+        <div class="container">
+            <div class="quoteContent row d-flex justify-content-between align-items-center">
+                <div class="col-md-4 fz-4 lh-6 fw-bold lightest">“I want to make the life more simple by crafts.”
+                </div>
+                <div class="col-md-3 artDirector">
+                    <div class="fz-2 lh-3 transparentWhite Director">Art Director</div>
+                    <div class="fz-3 lh-3 lightest mb-2">hsiao-Ming Chen</div>
+                    <div class="SNS d-flex">
+                        <a href="#" class="SNS-link lh-2 fw-bold primary">Instagram</a>
+                        <a href="#" class="lh-2 fw-bold primary">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <section class="swiper mb-md-9 mb-6">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- 第一個 -->
+                <div class="swiper-slide w-240 w-md-350">
+                    <div class="slideImg position-relitive">
+                        <img src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"
+                            alt="tatami cup">
+                        <div class="saleTab fw-bold lightest position-absolute">On Sale</div>
+                    </div>
+                    <div class="slideContent">
+                        <p class="fz-3 lh-36 fw-bold textColor">Tatami Cup</p>
+                        <span class="fz-2 lh-3 textColor">NT$1,080</span>
+                        <del class="fz-2 lh-3 textLight">NT$1,200</del>
+                    </div>
+                </div>
+                <!-- 第二個 -->
+                <div class="swiper-slide w-md-350 w-240">
+                    <div class="slideImg position-relitive">
+                        <img src="https://images.unsplash.com/photo-1523367310297-83064fc42a16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+                            alt="couple collection">
+                    </div>
+                    <div class="slideContent">
+                        <p class="fz-3 lh-36 fw-bold textColor">Couple Collection</p>
+                        <span class="fz-2 lh-3 textColor">NT$2,800</span>
+                    </div>
+                </div>
+                <!-- 第三個 -->
+                <div class="swiper-slide w-md-350 w-240">
+                    <div class="slideImg position-relitive">
+                        <img src="https://images.unsplash.com/photo-1559810087-893a00a35608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                            alt="Brotherhood Vase">
+                    </div>
+                    <div class="slideContent">
+                        <p class="fz-3 lh-36 fw-bold textColor">Brotherhood Vase</p>
+                        <span class="fz-2 lh-3 textColor">NT$4,800</span>
+                    </div>
+                </div>
+                <!-- 第四個 -->
+                <div class="swiper-slide w-md-350 w-240">
+                    <div class="slideImg position-relitive">
+                        <img src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80"
+                            alt="Baifan Bowl">
+                    </div>
+                    <div class="slideContent">
+                        <p class="fz-3 lh-36 fw-bold textColor">Baifan Bowl</p>
+                        <span class="fz-2 lh-3 textColor">NT$1,800</span>
+                    </div>
+                </div>
+                <!-- 第五個 -->
+                <div class="swiper-slide w-md-350 w-240">
+                    <div class="slideImg position-relitive">
+                        <img src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"
+                            alt="tatami cup">
+                        <div class="saleTab fw-bold lightest position-absolute">On Sale</div>
+                    </div>
+                    <div class="slideContent">
+                        <p class="fz-3 lh-36 fw-bold textColor">Tatami Cup</p>
+                        <span class="fz-2 lh-3 textColor">NT$1,080</span>
+                        <del class="fz-2 lh-3 textLight">NT$1,200</del>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="subscribe bg-cover">
+        <div class="container py-3 py-md-13">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <p class="callActive fz-4 lh-6 fw-bold lightest mb-md-6">Subscribe for news and special offers!</p>
+
+                    <form class="form-inline flex-nowrap w-100">
+                        <label class=" sr-only" for="inlineFormInputName2">Name</label>
+                        <input type="text" class="form-control fz-2 lh-3 transparentWhite flex-md-fill"
+                            id="inlineFormInputName2" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container py-md-4">
+            <div class="row d-md-flex align-items-md-center flex-column flex-md-row">
+                <a class="logo mb-6 mb-md-0" href="../html/index.html">Craftsman</a>
+                <p class="m-0 order-3 order-md-2 ml-md-2">© 2020. All Rights Reserved.</p>
+
+                <ul class="mb-6 mb-md-0 d-md-flex order-md-3 ml-md-auto">
+                    <li class="mb-2 mb-md-0 mr-md-6"><a href="#">Purchase Policy</a></li>
+                    <li class="mb-2 mb-md-0 mr-md-6"><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/swiper.js"></script>
+</body>
+
+</html>

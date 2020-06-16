@@ -1,0 +1,150 @@
+.fillBtn {
+    display: inline-block;
+    padding: 19px 45px 18px 45px;
+    background-color: $primary;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        background-color: darken($primary, 15%);
+        color: $lightest;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.logo {
+    display: inline-block;
+    color: $text;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+
+.nav-link {
+    padding: 0;
+    color: #fff;
+        &:hover {
+        color: $primary;
+    }
+}
+
+.nav-list-link {
+    padding: 0;
+    color: $text;
+        &:hover {
+        color: $text;
+    }
+}
+
+.cartModal {
+    a {
+        display: inherit;
+    }
+
+    .modal.right .modal-dialog {
+		position: fixed;
+        right:0;
+		margin: auto;
+		height: 100%;
+        width: 100%;
+		transform: translate3d(0%, 0, 0);
+    
+    @media (min-width: 768px) {
+        width: 540px;
+        }
+	}
+
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+
+    .modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+    .modal-header {
+		border-bottom: none;
+	}
+    .modal-footer{
+        border-top:none;
+    }
+
+    .modal-body {
+        .buylist {
+            img {
+                width: 96px;
+                height: 96px;
+                object-fit: cover;
+                border-radius: 2px 0px 0px 2px;
+                @media (min-width: 768px) {
+                    height: 112px;
+                    width: 112px;
+                }
+            }
+
+            .buylistContent {
+                height: 96px;
+                border-radius: 0px 2px 2px 0px;
+                @media (min-width: 768px) {
+                    height: 112px;
+                }
+            }
+
+            .goodPriceArea {
+                margin-bottom: 13px;
+                @media (min-width: 768px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .goodsAcount {
+                font-size: 14px;
+                line-height: 14px;
+                @media (min-width: 768px) {
+                    line-height: 19px;
+                }
+            }
+
+            .goodsPrice {
+                font-size: 12px;
+                line-height: 12px;
+                color: #00000062;
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        .priceDetail, .priceTotal {
+            @media (min-width: 768px) {
+                margin-left: 113px;
+            }
+        }
+
+        .fillBtn {
+            @media (min-width: 768px) {
+                margin-left: 114px;
+            }
+        }
+    }
+}
+
+.arrowIcon {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+    &.active {
+        transform: rotate(-180deg);
+    }
+}

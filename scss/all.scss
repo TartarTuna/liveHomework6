@@ -1,0 +1,16 @@
+
+//bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "_variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import"_base.scss";
+@import"_utils.scss";
+@import"_components.scss";
+@import"_swiper.scss";
+@import"_layout.scss";
+@import"_index.scss";
+@import"_product.scss";
+@import"_productDetail.scss";
+@import"_paymentProcess.scss";
+@import"_complete.scss";
